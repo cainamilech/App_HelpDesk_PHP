@@ -9,7 +9,7 @@ require_once "validador_acesso.php" //puxa de um arquivo a começo da sessao e a
  $chamados = array();
 
  //abrir o arquivo.hd
- $arquivo = fopen('../../app_help_desk/arquivo.hd', 'r'); //fopen é nativo do php, e cada letra(mode) tem uma função, 'r' é apenas para ler
+ $arquivo = fopen('arquivo.hd', 'r'); //fopen é nativo do php, e cada letra(mode) tem uma função, 'r' é apenas para ler
 
  //percorrer o arquivo hd enquanto houver registros(linhas) a serem recuperados
  while(!feof($arquivo)){ //testa cada final de linha pra ver se é o fim do arquivo. usei ! pra se der false, trocar pro true, pra entrar no laço de repetição
