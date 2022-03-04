@@ -10,7 +10,7 @@
 	$texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' . $descricao . PHP_EOL; //EndOfLine (para a cada registro, mudar a linha no arquivo)
 
 	//abre o arquivo
-	$arquivo = fopen('../../app_help_desk/arquivo.hd', 'a'); //nativo do php, o "a" tb é nativo, disponibiliza o arquivo para escrita
+	$arquivo = fopen('arquivo.hd', 'a'); //nativo do php, o "a" tb é nativo, disponibiliza o arquivo para escrita
 
 	 //seleciona o arquivo, e inclui o texto.
 	fwrite($arquivo, $texto);
